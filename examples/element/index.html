@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>@anil-labs/json-viewer — Web Component example</title>
+  </head>
+  <body>
+    <main class="page">
+      <div class="hero">
+        <span class="badge">Web Component · &lt;json-viewer&gt;</span>
+        <h1>@anil-labs/json-viewer</h1>
+        <p class="tag">
+          A framework-agnostic JSON tree viewer — expand/collapse with persistent state, syntax
+          highlighting, rainbow brackets, type badges and copy-to-clipboard. This demo runs entirely
+          in the browser.
+        </p>
+      </div>
+
+      <div class="toolbar">
+        <button id="theme" class="btn" type="button">Switch to light</button>
+        <button id="expand" class="btn" type="button">Expand all</button>
+        <button id="collapse" class="btn" type="button">Collapse all</button>
+      </div>
+
+      <div class="panel">
+        <json-viewer id="viewer" dark-mode expanded></json-viewer>
+      </div>
+
+      <section class="log-wrap">
+        <h2>Events</h2>
+        <div class="log" id="log">
+          <div class="empty">Toggle a node or copy a value…</div>
+        </div>
+      </section>
+
+      <footer>
+        The same <code>@anil-labs/json-viewer-core</code> engine powers every framework binding.
+        <a href="https://github.com/anilkumarthakur60/json-viewer">View source on GitHub</a>
+      </footer>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
