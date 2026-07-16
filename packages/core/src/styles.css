@@ -1,0 +1,272 @@
+/* @anil-labs/json-viewer — engine styles. Import once:
+     import '@anil-labs/json-viewer-core/styles.css'
+   Catppuccin-inspired dark palette + a bright light palette. */
+
+.jv-node {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', 'Menlo', monospace;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.jv-node *,
+.jv-node *::before,
+.jv-node *::after {
+  box-sizing: border-box;
+}
+
+.jv-root {
+  padding: 16px;
+  border-radius: 8px;
+  overflow: auto;
+}
+.jv-dark {
+  background: linear-gradient(135deg, #1e1e2e 0%, #2d2d3f 100%);
+  color: #cdd6f4;
+}
+.jv-light {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  color: #343a40;
+}
+
+/* ── root controls ────────────────────────────────────────────────── */
+.jv-root-controls {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.jv-control-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.jv-control-btn-dark {
+  background: rgba(137, 180, 250, 0.1);
+  border-color: rgba(137, 180, 250, 0.3);
+  color: #89b4fa;
+}
+.jv-control-btn-dark:hover {
+  background: rgba(137, 180, 250, 0.2);
+  border-color: rgba(137, 180, 250, 0.5);
+}
+.jv-control-btn-light {
+  background: rgba(25, 113, 194, 0.1);
+  border-color: rgba(25, 113, 194, 0.3);
+  color: #1971c2;
+}
+.jv-control-btn-light:hover {
+  background: rgba(25, 113, 194, 0.2);
+  border-color: rgba(25, 113, 194, 0.5);
+}
+
+/* ── layout ───────────────────────────────────────────────────────── */
+.jv-item {
+  margin-left: 0;
+}
+.jv-children {
+  margin-left: 20px;
+  padding-left: 12px;
+  border-left: 2px solid;
+}
+.jv-row {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 2px 0;
+  position: relative;
+}
+.jv-row:hover .jv-copy-btn {
+  opacity: 1;
+}
+
+/* ── keys ─────────────────────────────────────────────────────────── */
+.jv-key {
+  font-weight: 600;
+  cursor: pointer;
+}
+.jv-clickable {
+  transition: opacity 0.2s;
+}
+.jv-clickable:hover {
+  opacity: 0.7;
+}
+.jv-colon {
+  margin-right: 4px;
+}
+
+/* ── type badges ──────────────────────────────────────────────────── */
+.jv-type-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.jv-type-badge {
+  font-size: 9px;
+  font-weight: 600;
+  padding: 1px 4px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+.jv-type-object {
+  background: rgba(245, 194, 231, 0.2);
+  color: #f5c2e7;
+}
+.jv-light .jv-type-object {
+  background: rgba(194, 37, 92, 0.1);
+  color: #c2255c;
+}
+.jv-type-array {
+  background: rgba(137, 180, 250, 0.2);
+  color: #89b4fa;
+}
+.jv-light .jv-type-array {
+  background: rgba(25, 113, 194, 0.1);
+  color: #1971c2;
+}
+
+/* ── toggle & brackets ────────────────────────────────────────────── */
+.jv-toggle {
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.jv-toggle:hover {
+  opacity: 0.8;
+}
+.jv-toggle:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+.jv-bracket {
+  font-weight: 600;
+}
+
+/* ── count badge ──────────────────────────────────────────────────── */
+.jv-count {
+  margin-left: 8px;
+  font-size: 11px;
+  padding: 1px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.jv-count:hover {
+  opacity: 0.8;
+}
+.jv-count-dark {
+  background: rgba(137, 180, 250, 0.15);
+  color: #89b4fa;
+}
+.jv-count-light {
+  background: rgba(25, 113, 194, 0.1);
+  color: #1971c2;
+}
+
+/* ── value colors ─────────────────────────────────────────────────── */
+.jv-string-dark {
+  color: #a6e3a1;
+}
+.jv-string-light {
+  color: #2f9e44;
+}
+.jv-number-dark {
+  color: #fab387;
+}
+.jv-number-light {
+  color: #e8590c;
+}
+.jv-boolean-dark {
+  color: #f9e2af;
+}
+.jv-boolean-light {
+  color: #f59f00;
+}
+.jv-null {
+  font-style: italic;
+}
+.jv-null-dark {
+  color: #f38ba8;
+}
+.jv-null-light {
+  color: #e03131;
+}
+.jv-date-dark {
+  color: #94e2d5;
+}
+.jv-date-light {
+  color: #0c8599;
+}
+.jv-regexp-dark {
+  color: #cba6f7;
+}
+.jv-regexp-light {
+  color: #7048e8;
+}
+.jv-value-dark {
+  color: #cdd6f4;
+}
+.jv-value-light {
+  color: #343a40;
+}
+.jv-comma {
+  color: inherit;
+  opacity: 0.6;
+}
+
+/* ── copy button ──────────────────────────────────────────────────── */
+.jv-copy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+  padding: 4px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0;
+  background: transparent;
+  color: inherit;
+  transition: all 0.2s;
+}
+.jv-copy-btn:hover {
+  transform: scale(1.1);
+}
+.jv-copy-btn:focus-visible {
+  opacity: 1;
+  outline: 2px solid currentColor;
+  outline-offset: 1px;
+}
+.jv-copy-btn-dark {
+  color: #89b4fa;
+}
+.jv-copy-btn-dark:hover {
+  background: rgba(137, 180, 250, 0.15);
+}
+.jv-copy-btn-light {
+  color: #1971c2;
+}
+.jv-copy-btn-light:hover {
+  background: rgba(25, 113, 194, 0.1);
+}
+.jv-primitive .jv-copy-btn {
+  opacity: 0;
+}
+.jv-primitive:hover .jv-copy-btn {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .jv-node *,
+  .jv-node *::before,
+  .jv-node *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
