@@ -1,7 +1,7 @@
 import type { JsonObject } from '@anil-labs/json-viewer-core'
 
 /**
- * A rich sample document — the same payload used by every framework demo.
+ * A rich sample document  the same payload used by every framework demo.
  * It exercises strings, numbers, booleans, null, nested objects, arrays of
  * strings, arrays of objects and a deeply nested tree so the viewer can show
  * off expand/collapse, type colours, badges and copy-to-clipboard.

@@ -1,6 +1,6 @@
 # Web Component
 
-`@anil-labs/json-viewer-element` registers a `<json-viewer>` custom element — usable in any framework
+`@anil-labs/json-viewer-element` registers a `<json-viewer>` custom element  usable in any framework
 or in plain HTML, with no build step. Importing the package auto-registers the element.
 
 ## Install
@@ -9,7 +9,7 @@ or in plain HTML, with no build step. Importing the package auto-registers the e
 npm i @anil-labs/json-viewer-element @anil-labs/json-viewer-core
 ```
 
-The stylesheet lives in the core package — import it once, anywhere in your app:
+The stylesheet lives in the core package  import it once, anywhere in your app:
 
 ```ts
 import '@anil-labs/json-viewer-core/styles.css'
@@ -18,7 +18,7 @@ import '@anil-labs/json-viewer-core/styles.css'
 ## Quick start
 
 Configure the element with **attributes**, set the JSON as the `.data` **JS property** (it's an
-arbitrary value, not a string), and listen for `jv:*` **events** — where `event.detail` is the typed
+arbitrary value, not a string), and listen for `jv:*` **events**  where `event.detail` is the typed
 payload.
 
 ```html
@@ -48,7 +48,7 @@ payload.
 ## A lively demo
 
 Wire your own buttons to the element's `expandAll()` / `collapseAll()` methods, and flip the theme by
-setting the `dark-mode` attribute (both `dark-mode` and `expanded` apply in place — no rebuild):
+setting the `dark-mode` attribute (both `dark-mode` and `expanded` apply in place  no rebuild):
 
 ```html
 <div class="toolbar">
@@ -114,8 +114,8 @@ Every event's `detail` is the typed payload. Events bubble.
 | --- | --- |
 | `expandAll()` | Expand every node. |
 | `collapseAll()` | Collapse every node. |
-| `data` | Getter/setter — the JSON value on display. |
-| `jsonViewer` | Getter — the underlying `JsonViewer` engine (once built). |
+| `data` | Getter/setter  the JSON value on display. |
+| `jsonViewer` | Getter  the underlying `JsonViewer` engine (once built). |
 
 ```js
 const el = document.querySelector('json-viewer')

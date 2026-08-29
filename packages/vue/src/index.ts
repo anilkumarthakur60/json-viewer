@@ -26,7 +26,7 @@ export interface UseJsonViewerOptions extends JsonViewerOptions {
 /**
  * Create and manage a {@link JsonViewerCore} instance; the viewer is built on
  * mount (so it is SSR-safe) and destroyed on scope unmount. Returns a ref to
- * the viewer — read `.el` or call `.mount(host)` to place it in the DOM.
+ * the viewer  read `.el` or call `.mount(host)` to place it in the DOM.
  */
 export function useJsonViewer(options: UseJsonViewerOptions): ShallowRef<JsonViewerCore | null> {
   const viewer = shallowRef<JsonViewerCore | null>(null)

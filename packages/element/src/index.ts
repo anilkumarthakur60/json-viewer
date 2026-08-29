@@ -68,7 +68,7 @@ export class JsonViewerElement extends Base {
 
   attributeChangedCallback(name: string): void {
     if (!this.isConnected || !this.viewer) return
-    // Attributes the core can apply in place — no full rebuild needed.
+    // Attributes the core can apply in place  no full rebuild needed.
     if (name === 'dark-mode') {
       this.viewer.setDarkMode(this.bool('dark-mode'))
       return

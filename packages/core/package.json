@@ -1,7 +1,7 @@
 {
   "name": "@anil-labs/json-viewer-core",
   "version": "0.1.0",
-  "description": "Framework-agnostic JSON tree viewer — expand/collapse with persistent state, syntax highlighting, rainbow brackets, type badges, dark/light themes and copy-to-clipboard. Renders its own DOM. Zero dependencies.",
+  "description": "Framework-agnostic JSON tree viewer  expand/collapse with persistent state, syntax highlighting, rainbow brackets, type badges, dark/light themes and copy-to-clipboard. Renders its own DOM. Zero dependencies.",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",

@@ -68,7 +68,7 @@ export function useJsonViewer(options: UseJsonViewerOptions): JsonViewerControll
       v.destroy()
       setViewer(null)
     }
-    // Created once — options are read at construction and callbacks use a ref.
+    // Created once  options are read at construction and callbacks use a ref.
   }, [])
 
   // Reactive sync: push data / darkMode / expanded only when they change.

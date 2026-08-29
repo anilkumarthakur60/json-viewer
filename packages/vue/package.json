@@ -1,7 +1,7 @@
 {
   "name": "@anil-labs/json-viewer-vue",
   "version": "0.1.0",
-  "description": "Vue 3 bindings for @anil-labs/json-viewer-core — a collapsible JSON tree viewer with syntax highlighting, type badges, dark/light themes and copy-to-clipboard.",
+  "description": "Vue 3 bindings for @anil-labs/json-viewer-core  a collapsible JSON tree viewer with syntax highlighting, type badges, dark/light themes and copy-to-clipboard.",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",

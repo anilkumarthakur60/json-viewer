@@ -1,7 +1,7 @@
 {
   "name": "@anil-labs/json-viewer-element",
   "version": "0.1.0",
-  "description": "The <json-viewer> Web Component for @anil-labs/json-viewer-core — an expand/collapse JSON tree viewer usable in any framework or plain HTML.",
+  "description": "The <json-viewer> Web Component for @anil-labs/json-viewer-core  an expand/collapse JSON tree viewer usable in any framework or plain HTML.",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",

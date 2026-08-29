@@ -1,8 +1,8 @@
 # Data Types
 
 `JsonViewer` renders far more than plain JSON. It understands every JavaScript
-value you are likely to inspect while debugging — including `Date`, `RegExp`,
-`undefined`, and functions — and gives each its own color, type badge, and
+value you are likely to inspect while debugging  including `Date`, `RegExp`,
+`undefined`, and functions  and gives each its own color, type badge, and
 formatting.
 
 ## Supported Types
@@ -91,13 +91,13 @@ they also show a size label:
 | Empty array | `empty` | `"list": empty []`             |
 
 - Object badges always read **`obj`**.
-- Array badges show the **item count** (`5`) — or **`empty`** when the array has
+- Array badges show the **item count** (`5`)  or **`empty`** when the array has
   no items.
 - The count label is singular for one child: `1 key`, `1 item`.
 
 ## Empty Containers
 
-Empty objects and arrays render inline and are **not** expandable — there is
+Empty objects and arrays render inline and are **not** expandable  there is
 nothing to open, so no toggle or count label appears:
 
 - Empty object → `obj {}`
@@ -108,7 +108,7 @@ Their keys are also dimmed to a muted overlay color to signal emptiness.
 ## Colors & Keys
 
 Every value gets a themed color, and **keys are colored to match the type of
-their value** — so an object key is pink, an array key is blue, a string key is
+their value**  so an object key is pink, an array key is blue, a string key is
 green, and so on. Nested brackets cycle through a six-color rainbow by depth.
 The complete palette lives in [Dark / Light Mode](/guide/theming).
 

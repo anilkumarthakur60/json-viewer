@@ -10,7 +10,7 @@ box.
 npm i @anil-labs/json-viewer-react @anil-labs/json-viewer-core
 ```
 
-The stylesheet lives in the core package — import it once, anywhere in your app:
+The stylesheet lives in the core package  import it once, anywhere in your app:
 
 ```ts
 import '@anil-labs/json-viewer-core/styles.css'
@@ -54,14 +54,14 @@ The component spreads all [`JsonViewerOptions`](/reference/api#options) (`data`,
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| `data` | `JsonValue` | — (required) | The JSON to display. |
+| `data` | `JsonValue` |  (required) | The JSON to display. |
 | `darkMode` | `boolean` | `true` | Use the dark theme. Change it live and the whole tree re-themes. |
 | `expanded` | `boolean` | `true` | Baseline expanded state; flip it to expand/collapse everything. |
 | `rootControls` | `boolean` | `true` | Show the built-in Expand-All / Collapse-All controls. |
 | `copyable` | `boolean` | `true` | Show per-node copy buttons. |
-| `wrapperClass` | `string` | — | Class for the host element the viewer mounts into. |
-| `onToggle` | `(p: ToggleEventPayload) => void` | — | Fires when a node is expanded or collapsed. |
-| `onCopy` | `(p: CopyEventPayload) => void` | — | Fires when a node's value is copied. |
+| `wrapperClass` | `string` |  | Class for the host element the viewer mounts into. |
+| `onToggle` | `(p: ToggleEventPayload) => void` |  | Fires when a node is expanded or collapsed. |
+| `onCopy` | `(p: CopyEventPayload) => void` |  | Fires when a node's value is copied. |
 
 Because `darkMode` and `expanded` are reactive, wiring up a lively demo is just React state:
 

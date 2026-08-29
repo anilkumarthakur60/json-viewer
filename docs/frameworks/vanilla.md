@@ -1,7 +1,7 @@
 # Vanilla / Core
 
 `@anil-labs/json-viewer-core` is the engine every binding wraps. Use it directly in plain JavaScript
-or TypeScript — no framework required.
+or TypeScript  no framework required.
 
 ## Install
 
@@ -46,7 +46,7 @@ No `target`? The rendered root lives on `viewer.el`, or call `viewer.mount(host)
 
 ## A lively demo
 
-Turn off the built-in `rootControls` and drive expand/collapse and the theme from your own buttons —
+Turn off the built-in `rootControls` and drive expand/collapse and the theme from your own buttons 
 the whole tree flips between dark and light with a single `setDarkMode` call:
 
 ```ts
@@ -128,8 +128,8 @@ off()
 
 | Event | Payload |
 | --- | --- |
-| `toggle` | `{ path, key, expanded }` — a node was expanded or collapsed. |
-| `copy` | `{ path, key, value }` — a node's value was copied to the clipboard. |
+| `toggle` | `{ path, key, expanded }`  a node was expanded or collapsed. |
+| `copy` | `{ path, key, value }`  a node's value was copied to the clipboard. |
 
 ## Cleanup
 

@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "@anil-labs/json-viewer"
   text: "A JSON tree viewer for any framework"
-  tagline: Persistent expand/collapse, syntax-highlighted data types, dark & light themes, typed events and one-click copy — one core engine, and bindings for React, Vue, Svelte, Solid and a Web Component.
+  tagline: Persistent expand/collapse, syntax-highlighted data types, dark & light themes, typed events and one-click copy  one core engine, and bindings for React, Vue, Svelte, Solid and a Web Component.
   actions:
     - theme: brand
       text: Get Started
@@ -19,7 +19,7 @@ hero:
 features:
   - icon: 🌳
     title: Framework-agnostic core
-    details: One JsonViewer engine renders the tree in plain TypeScript. Every binding is a thin wrapper over the same core — no duplicated logic.
+    details: One JsonViewer engine renders the tree in plain TypeScript. Every binding is a thin wrapper over the same core  no duplicated logic.
   - icon: 🎨
     title: Syntax-highlighted types
     details: Strings, numbers, booleans, null, objects and arrays are each styled distinctly, so deeply nested structures stay easy to scan.
@@ -28,7 +28,7 @@ features:
     details: Flip a single darkMode flag to switch the whole tree between built-in dark and light palettes. No external theme files.
   - icon: 🔄
     title: Persistent expand/collapse
-    details: Node state is keyed by path and survives collapsing an ancestor — plus expandAll, collapseAll and per-node toggle helpers.
+    details: Node state is keyed by path and survives collapsing an ancestor  plus expandAll, collapseAll and per-node toggle helpers.
   - icon: 📡
     title: Typed events
     details: Listen to toggle and copy with fully typed payloads (path, key, expanded/value) to sync or persist your view state.
@@ -37,10 +37,10 @@ features:
     details: One-click copy on any node or value, with a graceful fallback for non-secure contexts.
   - icon: 🧩
     title: Five bindings + Web Component
-    details: React, Vue, Svelte and Solid wrappers, a framework-free <json-viewer> custom element, and the raw core — all over one engine.
+    details: React, Vue, Svelte and Solid wrappers, a framework-free <json-viewer> custom element, and the raw core  all over one engine.
   - icon: 🎯
     title: Typed, zero-any
-    details: Written in strict TypeScript with exported JsonValue, JsonViewerOptions and event payload types — no any in the public API.
+    details: Written in strict TypeScript with exported JsonValue, JsonViewerOptions and event payload types  no any in the public API.
 ---
 
 ## Quick Start
@@ -77,7 +77,7 @@ viewer.on('copy', ({ path, value }) => console.log('copied', path, value))
 ```
 
 Prefer a framework wrapper? Every binding takes the same options and emits the
-same events — pick yours from the [Frameworks](/frameworks/vanilla) guides.
+same events  pick yours from the [Frameworks](/frameworks/vanilla) guides.
 
 ## Why @anil-labs/json-viewer?
 

@@ -1,7 +1,7 @@
 import type { JsonValue } from '@anil-labs/json-viewer-element'
 
 /**
- * A rich demo document — strings, numbers (int + float), booleans, null, a
+ * A rich demo document  strings, numbers (int + float), booleans, null, a
  * nested object (address/geo), an array of strings, an array of objects and a
  * deeply nested structure. Enough to show expand/collapse, type colors and
  * badges across every value kind the viewer renders.

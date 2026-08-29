@@ -8,7 +8,7 @@ export default defineConfig({
   lang: 'en-US',
   title: '@anil-labs/json-viewer',
   description:
-    'A framework-agnostic JSON tree viewer — persistent expand/collapse, syntax-highlighted data types, dark/light themes, typed events and copy-to-clipboard. One core engine, and bindings for React, Vue, Svelte, Solid and a Web Component.',
+    'A framework-agnostic JSON tree viewer  persistent expand/collapse, syntax-highlighted data types, dark/light themes, typed events and copy-to-clipboard. One core engine, and bindings for React, Vue, Svelte, Solid and a Web Component.',
   cleanUrls: true,
   lastUpdated: true,
   head: [['meta', { name: 'theme-color', content: '#3b82f6' }]],

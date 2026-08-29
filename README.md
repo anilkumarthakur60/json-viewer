@@ -1,12 +1,12 @@
 # @anil-labs/json-viewer
 
-A **framework-agnostic JSON tree viewer** — expand/collapse with persistent per-node state, syntax highlighting, rainbow brackets, type badges, dark/light themes and per-node copy-to-clipboard. A zero-dependency core renders its own DOM, with thin bindings for **React, Vue, Svelte, Solid** and a **Web Component**.
+A **framework-agnostic JSON tree viewer**  expand/collapse with persistent per-node state, syntax highlighting, rainbow brackets, type badges, dark/light themes and per-node copy-to-clipboard. A zero-dependency core renders its own DOM, with thin bindings for **React, Vue, Svelte, Solid** and a **Web Component**.
 
 ## Packages
 
 | Package | What it is |
 | --- | --- |
-| [`@anil-labs/json-viewer-core`](packages/core) | The engine — vanilla TS, renders its own DOM + ships `styles.css`. Zero dependencies. |
+| [`@anil-labs/json-viewer-core`](packages/core) | The engine  vanilla TS, renders its own DOM + ships `styles.css`. Zero dependencies. |
 | [`@anil-labs/json-viewer-react`](packages/react) | React hook + `<JsonViewer>` component |
 | [`@anil-labs/json-viewer-vue`](packages/vue) | Vue 3 `<JsonViewer>` component + composable |
 | [`@anil-labs/json-viewer-svelte`](packages/svelte) | Svelte action + controller |
@@ -44,9 +44,9 @@ export default () => <JsonViewer data={data} darkMode onCopy={(p) => console.log
 
 ## Features
 
-- **Recursive rendering** of objects, arrays and primitives — plus `Date`, `RegExp` and functions.
-- **Persistent expand/collapse** — a path-keyed store means a nested collapse survives an ancestor collapse + re-expand. Expand-All / Collapse-All controls included.
-- **Syntax highlighting** — distinct colors per type, key colors by value type, and rainbow brackets by nesting depth.
+- **Recursive rendering** of objects, arrays and primitives  plus `Date`, `RegExp` and functions.
+- **Persistent expand/collapse**  a path-keyed store means a nested collapse survives an ancestor collapse + re-expand. Expand-All / Collapse-All controls included.
+- **Syntax highlighting**  distinct colors per type, key colors by value type, and rainbow brackets by nesting depth.
 - **Type badges** (`obj` / item count) and collapsed count labels (`3 keys`, `5 items`).
 - **Copy to clipboard** per node, with a legacy `execCommand` fallback, and a `copy` event.
 - **Dark & light themes** (Catppuccin-inspired dark, bright light).

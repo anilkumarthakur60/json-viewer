@@ -34,7 +34,7 @@ export default function App() {
         <span class="badge">SolidJS</span>
         <h1>@anil-labs/json-viewer</h1>
         <p class="tag">
-          A framework-agnostic JSON tree viewer — expand/collapse with persistent state, syntax
+          A framework-agnostic JSON tree viewer  expand/collapse with persistent state, syntax
           highlighting, rainbow brackets, type badges and copy-to-clipboard. One core engine, every
           framework binding.
         </p>

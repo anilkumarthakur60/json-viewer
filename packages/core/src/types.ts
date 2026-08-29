@@ -13,7 +13,7 @@ export interface JsonObject {
 /** A JSON array. */
 export type JsonArray = JsonValue[]
 
-/** Any displayable value — primitives, objects, arrays, plus Date/RegExp/function. */
+/** Any displayable value  primitives, objects, arrays, plus Date/RegExp/function. */
 export type JsonValue =
   JsonPrimitive | JsonObject | JsonArray | Date | RegExp | ((...args: unknown[]) => unknown)
 

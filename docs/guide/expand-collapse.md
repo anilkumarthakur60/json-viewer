@@ -37,7 +37,7 @@ new JsonViewer({ data, target, expanded: false });
 :::
 
 ::: tip Large data
-For very large JSON, start with `expanded: false` — collapsed subtrees aren't
+For very large JSON, start with `expanded: false`  collapsed subtrees aren't
 rendered at all, so the initial paint is much faster.
 :::
 
@@ -57,7 +57,7 @@ Users can toggle a node by clicking any of:
 
 1. the **key** (e.g. `"hobbies"`),
 2. the **colon** after the key,
-3. the **type indicator** — the badge and brackets (`obj {`, `[…]`),
+3. the **type indicator**  the badge and brackets (`obj {`, `[…]`),
 4. the **count label** (`3 keys`, `5 items`) shown when collapsed.
 
 Toggle targets are keyboard-accessible too: they expose `role="button"` /
@@ -66,15 +66,15 @@ Toggle targets are keyboard-accessible too: they expose `role="button"` /
 ## Persistent, Path-Keyed State
 
 This is the important part. Expand a nested node, collapse one of its ancestors,
-then expand that ancestor again — the nested node is **exactly where you left
+then expand that ancestor again  the nested node is **exactly where you left
 it**.
 
 Each node has a stable, JSONPath-style path (`$.users[0].role`). The viewer
 keeps a single **path-keyed store of overrides** on the instance: toggling a
 node writes `path → expanded` into that map, and `isExpanded(path)` reads the
 override, falling back to the shared baseline (`expanded`) when a node has never
-been touched. Because the store lives on the instance — not in the DOM that
-unmounts when a parent collapses — collapsing an ancestor never discards the
+been touched. Because the store lives on the instance  not in the DOM that
+unmounts when a parent collapses  collapsing an ancestor never discards the
 state inside it.
 
 ::: info Why this matters
@@ -121,7 +121,7 @@ console.log(viewer.isExpanded('$.settings')); // false
 ```
 
 In the framework bindings, drive the same behavior through the reactive
-`expanded` prop — flipping it calls `setExpandedDefault()` under the hood:
+`expanded` prop  flipping it calls `setExpandedDefault()` under the hood:
 
 ::: code-group
 
@@ -162,7 +162,7 @@ const [expanded, setExpanded] = useState(true);
 
 ::: warning Expand/Collapse All resets overrides
 `expandAll()`, `collapseAll()`, and `setExpandedDefault()` reset the shared
-baseline **and clear every per-node override** in one operation — so they do
+baseline **and clear every per-node override** in one operation  so they do
 **not** emit a `toggle` event per node. Only an individual `toggle()` (or a user
 click) records an override and fires an event.
 :::

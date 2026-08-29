@@ -1,6 +1,6 @@
 # Solid
 
-`@anil-labs/json-viewer-solid` wraps the core engine in a Solid component and hook. It's SSR-safe —
+`@anil-labs/json-viewer-solid` wraps the core engine in a Solid component and hook. It's SSR-safe 
 the viewer is only ever created on the client, inside effects.
 
 ## Install
@@ -9,7 +9,7 @@ the viewer is only ever created on the client, inside effects.
 npm i @anil-labs/json-viewer-solid @anil-labs/json-viewer-core
 ```
 
-The stylesheet lives in the core package — import it once, anywhere in your app:
+The stylesheet lives in the core package  import it once, anywhere in your app:
 
 ```ts
 import '@anil-labs/json-viewer-core/styles.css'
@@ -52,11 +52,11 @@ The component accepts every [`JsonViewerOptions`](/reference/api#options) field 
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| `data` | `JsonValue` | — (required) | The JSON to display. |
-| `darkMode` | `boolean` | `true` | Use the dark theme (reactive — change it live to re-theme). |
+| `data` | `JsonValue` |  (required) | The JSON to display. |
+| `darkMode` | `boolean` | `true` | Use the dark theme (reactive  change it live to re-theme). |
 | `expanded` | `boolean` | `true` | Baseline expanded state; flip it to expand/collapse everything. |
-| `onToggle` | `(p: ToggleEventPayload) => void` | — | Fires when a node is expanded or collapsed. |
-| `onCopy` | `(p: CopyEventPayload) => void` | — | Fires when a node's value is copied. |
+| `onToggle` | `(p: ToggleEventPayload) => void` |  | Fires when a node is expanded or collapsed. |
+| `onCopy` | `(p: CopyEventPayload) => void` |  | Fires when a node's value is copied. |
 
 Because the props are reactive, a lively demo is just a couple of signals:
 

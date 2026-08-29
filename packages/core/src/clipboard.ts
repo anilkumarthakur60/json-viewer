@@ -62,7 +62,7 @@ export const copyJsonToClipboard = async (data: JsonValue): Promise<boolean> => 
       await navigator.clipboard.writeText(text)
       return true
     } catch {
-      // Permission denied or insecure context — try the legacy fallback.
+      // Permission denied or insecure context  try the legacy fallback.
     }
   }
 

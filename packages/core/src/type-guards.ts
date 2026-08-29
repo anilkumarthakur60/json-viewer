@@ -19,7 +19,7 @@ export const isJsonFunction = (value: JsonValue): value is (...args: unknown[]) 
 
 export const isJsonArray = (value: JsonValue): value is JsonArray => Array.isArray(value)
 
-/** Plain objects only — excludes Date, RegExp, Array and functions. */
+/** Plain objects only  excludes Date, RegExp, Array and functions. */
 export const isJsonObject = (value: JsonValue): value is JsonObject =>
   value !== null &&
   typeof value === 'object' &&

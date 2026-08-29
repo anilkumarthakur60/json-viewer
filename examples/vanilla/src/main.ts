@@ -47,4 +47,4 @@ const log = (kind: string, detail: string): void => {
 }
 
 viewer.on('toggle', (p: ToggleEventPayload) => log(p.expanded ? 'expand' : 'collapse', p.path))
-viewer.on('copy', (p: CopyEventPayload) => log('copy', `${p.path} — ${JSON.stringify(p.value)}`))
+viewer.on('copy', (p: CopyEventPayload) => log('copy', `${p.path}  ${JSON.stringify(p.value)}`))

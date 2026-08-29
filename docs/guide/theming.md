@@ -2,7 +2,7 @@
 
 `@anil-labs/json-viewer` ships two built-in themes: a Catppuccin-inspired dark
 palette (the default) and a bright, high-contrast light palette. Switch between
-them with the `darkMode` option — no CSS variables to wire up.
+them with the `darkMode` option  no CSS variables to wire up.
 
 ## Basic Usage
 
@@ -79,19 +79,19 @@ document.querySelector('#toggle-theme')!.addEventListener('click', () => {
 
 A Catppuccin-inspired palette:
 
-- **Background** — gradient `#1e1e2e → #2d2d3f`
-- **Text** — `#cdd6f4`
-- **Strings** — `#a6e3a1` · **Numbers** — `#fab387` · **Booleans** — `#f9e2af`
-- **Null / undefined** — `#f38ba8`
+- **Background**  gradient `#1e1e2e → #2d2d3f`
+- **Text**  `#cdd6f4`
+- **Strings**  `#a6e3a1` · **Numbers**  `#fab387` · **Booleans**  `#f9e2af`
+- **Null / undefined**  `#f38ba8`
 
 ## Light Mode
 
 A clean, high-contrast palette:
 
-- **Background** — gradient `#f8f9fa → #e9ecef`
-- **Text** — `#343a40`
-- **Strings** — `#2f9e44` · **Numbers** — `#e8590c` · **Booleans** — `#f59f00`
-- **Null / undefined** — `#e03131`
+- **Background**  gradient `#f8f9fa → #e9ecef`
+- **Text**  `#343a40`
+- **Strings**  `#2f9e44` · **Numbers**  `#e8590c` · **Booleans**  `#f59f00`
+- **Null / undefined**  `#e03131`
 
 ## Full Color Reference
 
@@ -135,7 +135,7 @@ which level you're on:
 
 ## How the Theme Is Applied
 
-The viewer renders its **own DOM and its own `jv-*` classes** — there is no
+The viewer renders its **own DOM and its own `jv-*` classes**  there is no
 Shadow DOM. The theme is expressed two ways:
 
 - The root element carries `jv-node jv-root` plus a theme class:
@@ -161,7 +161,7 @@ inline from the built-in palette above.
 ## Custom Colors
 
 There is **no color-theme option** yet. To recolor values, override the themed
-`jv-*` classes in your own (global) CSS — using `!important` where an inline
+`jv-*` classes in your own (global) CSS  using `!important` where an inline
 color would otherwise win:
 
 ```css
@@ -176,6 +176,6 @@ color would otherwise win:
 
 ::: tip Scope your overrides
 Pass `className` (or the `class-name` attribute on the Web Component) to add an
-extra class to the viewer root, then scope your CSS to it — e.g.
+extra class to the viewer root, then scope your CSS to it  e.g.
 `.my-viewer .jv-string-dark { … }`.
 :::

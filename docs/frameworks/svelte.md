@@ -9,7 +9,7 @@
 npm i @anil-labs/json-viewer-svelte @anil-labs/json-viewer-core
 ```
 
-The stylesheet lives in the core package — import it once, anywhere in your app:
+The stylesheet lives in the core package  import it once, anywhere in your app:
 
 ```ts
 import '@anil-labs/json-viewer-core/styles.css'
@@ -66,7 +66,7 @@ Because the action re-runs when its options object changes, a lively demo is jus
 
 ### Action options
 
-`use:jsonViewer` takes a `JsonViewerActionOptions` object — every
+`use:jsonViewer` takes a `JsonViewerActionOptions` object  every
 [`JsonViewerOptions`](/reference/api#options) field plus optional `onToggle` and `onCopy` callbacks.
 
 ## `createJsonViewer`
@@ -114,7 +114,7 @@ controller in the component and tear it down in `onDestroy`:
 | `setDarkMode` | `(darkMode: boolean) => void` | Switch between dark and light. |
 | `expandAll` | `() => void` | Expand every node. |
 | `collapseAll` | `() => void` | Collapse every node. |
-| `destroy` | `() => void` | Tear down — call in `onDestroy`. |
+| `destroy` | `() => void` | Tear down  call in `onDestroy`. |
 
 ::: tip Action or controller?
 Reach for `use:jsonViewer` for the declarative common case, and `createJsonViewer` when you need to

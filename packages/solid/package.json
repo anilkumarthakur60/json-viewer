@@ -1,7 +1,7 @@
 {
   "name": "@anil-labs/json-viewer-solid",
   "version": "0.1.0",
-  "description": "SolidJS bindings for @anil-labs/json-viewer-core — a framework-agnostic JSON tree viewer with expand/collapse, syntax highlighting, dark/light themes and copy-to-clipboard.",
+  "description": "SolidJS bindings for @anil-labs/json-viewer-core  a framework-agnostic JSON tree viewer with expand/collapse, syntax highlighting, dark/light themes and copy-to-clipboard.",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",

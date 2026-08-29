@@ -69,7 +69,7 @@ export function useJsonViewer(options: UseJsonViewerOptions): JsonViewerControll
     })
   })
 
-  // Reactive sync — push into the engine only when the value actually changes.
+  // Reactive sync  push into the engine only when the value actually changes.
   let prevData = options.data
   createEffect(() => {
     const data = options.data

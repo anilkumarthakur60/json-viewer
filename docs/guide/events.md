@@ -130,11 +130,11 @@ unique and stable, it's the ideal key for storing view state.
 ## Persisting Expand/Collapse State
 
 Expand/collapse state already **persists across collapse/re-expand within a
-single `JsonViewer` instance** — you don't need events for that (see
+single `JsonViewer` instance**  you don't need events for that (see
 [Expand & Collapse](/guide/expand-collapse)).
 
-Use the `toggle` event when you want state to survive something bigger — a route
-change, a remount, or a page reload — by recording it yourself and replaying it
+Use the `toggle` event when you want state to survive something bigger  a route
+change, a remount, or a page reload  by recording it yourself and replaying it
 with `toggle()` on the next mount:
 
 ```ts
@@ -166,8 +166,8 @@ viewer.on('toggle', (e) => {
 ```
 
 ::: warning Expand All / Collapse All don't emit per node
-The root "Expand All" / "Collapse All" controls — and the `expandAll()` /
-`collapseAll()` / `setExpandedDefault()` methods — reset the shared baseline in
+The root "Expand All" / "Collapse All" controls  and the `expandAll()` /
+`collapseAll()` / `setExpandedDefault()` methods  reset the shared baseline in
 one operation and do **not** emit a `toggle` for each node. Listen for those
 buttons separately if you need to react to them.
 :::
@@ -185,6 +185,6 @@ viewer.on('copy', (e) => {
 ```
 
 ::: tip Copy only fires on success
-If the copy fails — for example a value that can't be serialized, or a blocked
-clipboard — no `copy` event is emitted and the button's icon does not change.
+If the copy fails  for example a value that can't be serialized, or a blocked
+clipboard  no `copy` event is emitted and the button's icon does not change.
 :::

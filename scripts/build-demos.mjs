@@ -11,7 +11,7 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const outDir = resolve(root, 'dist-demos')
 const REPO = 'https://github.com/anilkumarthakur60/json-viewer'
 
-// Brand colors are each framework's own established identity color — used so
+// Brand colors are each framework's own established identity color  used so
 // a visitor can scan the grid by color the way they'd recognize a framework's
 // own logo, not as arbitrary decoration.
 const bindings = [
@@ -31,7 +31,7 @@ const bindings = [
     dir: 'svelte',
     title: 'Svelte',
     brand: '#ff3e00',
-    desc: 'A <code>jsonViewer</code> action — put it on a <code>&lt;div&gt;</code>, get a tree.',
+    desc: 'A <code>jsonViewer</code> action  put it on a <code>&lt;div&gt;</code>, get a tree.',
   },
   {
     dir: 'solid',
@@ -43,7 +43,7 @@ const bindings = [
     dir: 'element',
     title: 'Web Component',
     brand: '#e34f26',
-    desc: 'A <code>&lt;json-viewer&gt;</code> custom element — drop it in any page.',
+    desc: 'A <code>&lt;json-viewer&gt;</code> custom element  drop it in any page.',
   },
 ]
 
@@ -76,7 +76,7 @@ copyFileSync(
 )
 copyFileSync(resolve(root, 'packages/core/dist/styles.css'), resolve(engineDir, 'styles.css'))
 
-// The same payload every framework example renders — reused here so the
+// The same payload every framework example renders  reused here so the
 // landing page's live widget shows the identical data every demo link leads to.
 const demoData = {
   id: 42,
@@ -138,7 +138,7 @@ function landingPage() {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#14141f" />
-    <title>@anil-labs/json-viewer — Live Demos</title>
+    <title>@anil-labs/json-viewer  Live Demos</title>
     <link rel="stylesheet" href="/_engine/styles.css" />
     <style>
       :root {
@@ -327,7 +327,7 @@ function landingPage() {
       <p class="eyebrow reveal">live demos</p>
       <h1 class="title reveal">@anil-labs/json-viewer</h1>
       <p class="tagline reveal">
-        A framework-agnostic JSON tree viewer. What's below isn't a screenshot —
+        A framework-agnostic JSON tree viewer. What's below isn't a screenshot 
         it's the actual built package, rendering real data.
       </p>
 
@@ -343,7 +343,7 @@ function landingPage() {
         <a class="card card-engine" href="/vanilla/">
           <span class="card-eyebrow">the engine</span>
           <span class="card-title">Vanilla / Core</span>
-          <span class="card-desc">No wrapper — construct <code>JsonViewer</code> directly and it renders its own DOM.</span>
+          <span class="card-desc">No wrapper  construct <code>JsonViewer</code> directly and it renders its own DOM.</span>
         </a>
 ${bindings.map(bindingCard).join('\n')}
       </div>

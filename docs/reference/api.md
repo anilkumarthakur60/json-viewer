@@ -1,7 +1,7 @@
 # API Reference
 
 The complete public API of `@anil-labs/json-viewer-core`. The framework bindings wrap the
-`JsonViewer` class documented here — see the [Frameworks](/frameworks/vanilla) section for their
+`JsonViewer` class documented here  see the [Frameworks](/frameworks/vanilla) section for their
 hooks, components, actions and the custom element.
 
 ```ts
@@ -16,22 +16,22 @@ const viewer = new JsonViewer(options)
 ```
 
 The viewer renders its own DOM into `viewer.el` and, if you pass `target`, appends itself there
-immediately. It must be constructed in the browser — during SSR, create it inside an effect /
+immediately. It must be constructed in the browser  during SSR, create it inside an effect /
 `onMount`.
 
 ### Options
 
-`JsonViewerOptions` — only `data` is required.
+`JsonViewerOptions`  only `data` is required.
 
 | Option | Type | Default | Description |
 | --- | --- | --- | --- |
-| `data` | `JsonValue` | — (required) | The JSON data to display. |
+| `data` | `JsonValue` |  (required) | The JSON data to display. |
 | `darkMode` | `boolean` | `true` | Use the dark theme. Switchable at runtime with `setDarkMode`. |
 | `expanded` | `boolean` | `true` | Initial expanded state applied to every node. |
 | `rootControls` | `boolean` | `true` | Show the built-in Expand-All / Collapse-All controls above a root container. |
 | `copyable` | `boolean` | `true` | Show per-node copy-to-clipboard buttons. |
 | `className` | `string` | `''` | Extra class on the viewer root, for scoped styling. |
-| `target` | `HTMLElement` | — | Optional host element to render into immediately. |
+| `target` | `HTMLElement` |  | Optional host element to render into immediately. |
 
 ```ts
 const viewer = new JsonViewer({
@@ -121,7 +121,7 @@ interface JsonObject {
 /** A JSON array. */
 type JsonArray = JsonValue[]
 
-/** Any displayable value — primitives, objects, arrays, plus Date/RegExp/function. */
+/** Any displayable value  primitives, objects, arrays, plus Date/RegExp/function. */
 type JsonValue =
   | JsonPrimitive
   | JsonObject
@@ -136,7 +136,7 @@ the core (and re-exported by every binding) for typing your own handlers and wra
 
 ## CSS
 
-The stylesheet is required and imported separately — once, anywhere in your app:
+The stylesheet is required and imported separately  once, anywhere in your app:
 
 ```ts
 import '@anil-labs/json-viewer-core/styles.css'

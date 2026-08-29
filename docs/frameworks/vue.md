@@ -8,7 +8,7 @@
 npm i @anil-labs/json-viewer-vue @anil-labs/json-viewer-core
 ```
 
-The stylesheet lives in the core package — import it once, anywhere in your app:
+The stylesheet lives in the core package  import it once, anywhere in your app:
 
 ```ts
 import '@anil-labs/json-viewer-core/styles.css'
@@ -51,17 +51,17 @@ function onCopy(p: CopyEventPayload) {
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| `data` | `JsonValue` | — (required) | The JSON to display. |
-| `dark-mode` | `boolean` | `true` | Use the dark theme (reactive — change it live to re-theme). |
+| `data` | `JsonValue` |  (required) | The JSON to display. |
+| `dark-mode` | `boolean` | `true` | Use the dark theme (reactive  change it live to re-theme). |
 | `expanded` | `boolean` | `true` | Baseline expanded state; flip it to expand/collapse everything. |
 | `root-controls` | `boolean` | `true` | Show the built-in Expand-All / Collapse-All controls. |
 | `copyable` | `boolean` | `true` | Show per-node copy buttons. |
-| `class-name` | `string` | — | Extra class on the viewer root. |
+| `class-name` | `string` |  | Extra class on the viewer root. |
 
 | Event | Payload |
 | --- | --- |
-| `@toggle` | `ToggleEventPayload` — a node was expanded or collapsed. |
-| `@copy` | `CopyEventPayload` — a node's value was copied. |
+| `@toggle` | `ToggleEventPayload`  a node was expanded or collapsed. |
+| `@copy` | `CopyEventPayload`  a node's value was copied. |
 
 Because `dark-mode` and `expanded` are reactive props, a lively demo is just a couple of refs:
 

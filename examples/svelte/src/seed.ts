@@ -1,7 +1,7 @@
 import type { JsonValue } from '@anil-labs/json-viewer-core'
 
 /**
- * A rich sample payload — strings, numbers, booleans, null, a nested object
+ * A rich sample payload  strings, numbers, booleans, null, a nested object
  * (address), an array of strings (roles), an array of objects (orders) and a
  * deeply nested structure (metadata.nested). Enough to show off expand/collapse,
  * type colors and badges.
