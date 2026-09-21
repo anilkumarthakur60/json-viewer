@@ -47,7 +47,7 @@ const collapseAll = (): void => {
       <span class="badge">Vue · &lt;JsonViewer&gt;</span>
       <h1>@anil-labs/json-viewer</h1>
       <p class="tag">
-        A framework-agnostic JSON tree viewer  expand/collapse, syntax highlighting, rainbow
+        A framework-agnostic JSON tree viewer expand/collapse, syntax highlighting, rainbow
         brackets, type badges, dark/light themes and copy-to-clipboard. Zero backend, all in the
         browser.
       </p>
